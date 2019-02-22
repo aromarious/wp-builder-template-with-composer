@@ -1,0 +1,9 @@
+.env*
+.htaccess
+index.php
+wp
+vendor
+.vscode
+.DS_Store
+composer.json
+composer.lock

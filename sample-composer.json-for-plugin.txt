@@ -1,0 +1,13 @@
+{
+  "name": "developer-name/original-plugin",
+  "authors": [
+    {
+      "name": "developer-name",
+      "email": "someone@developer-name.com"
+    }
+  ],
+  "type"    : "wordpress-plugin", 
+  "require" : { 
+    "composer/installers": "~1.0"
+  }
+}

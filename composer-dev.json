@@ -1,0 +1,71 @@
+{
+    "name": "builder-name/wp-builder-sitename",
+    "authors": [
+        {
+            "name": "builder-name",
+            "email": "me@builder-name.com"
+        }
+    ],
+    "description": "build file for sitename wordpress site",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/developer-name/original-plugin"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/developer-name/original-theme"
+        },
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        },
+        {
+            "type": "composer",
+            "url": "https://wp-languages.github.io"
+        }
+    ],
+    "require": {
+        "johnpbloch/wordpress": "5.0.3",
+        "wpackagist-plugin/wp-multibyte-patch": "2.8.2",
+        "koodimonni-language/core-ja": "*",
+        "aromarious/wp-dotenv": "0.1.0",
+        "builder-name/original-plugin": "1.0.2",
+        "builder-name/original-theme": "dev-branchname"
+    },
+    "autoload": {
+        "psr-0": {
+            "Acme": "src/"
+        }
+    },
+    "extra": {
+        "installer-paths": {
+            "wp/wp-content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ]
+        },
+        "dropin-paths": {
+            "wp/wp-content/languages/": [
+                "vendor:koodimonni-language"
+            ],
+            "wp/wp-content/languages/plugins/": [
+                "vendor:koodimonni-plugin-language"
+            ],
+            "wp/wp-content/languages/themes/": [
+                "vendor:koodimonni-theme-language"
+            ]
+        },
+        "wordpress-install-dir": "wp"
+    },
+    "scripts": {
+        "generate-config" : [
+            "vendor/aromarious/wp-dotenv/generate-config.sh"
+        ],
+        "generate-config-with-salts" : [
+            "vendor/aromarious/wp-dotenv/generate-config.sh salts"
+        ],
+        "generate-index" : [
+            "vendor/aromarious/wp-dotenv/generate-index.sh"
+        ]
+    }    
+}
