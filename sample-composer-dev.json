@@ -1,13 +1,21 @@
 {
-    "name": "aromarious/wp-builder-sitename",
+    "name": "builder-name/wp-builder-sitename",
     "authors": [
         {
             "name": "builder-name",
             "email": "me@builder-name.com"
         }
     ],
-    "description": "build file for playard.aromarious wordpress site",
+    "description": "build file for sitename wordpress site",
     "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/developer-name/original-plugin"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/developer-name/original-theme"
+        },
         {
             "type": "composer",
             "url": "https://wpackagist.org"
@@ -21,7 +29,9 @@
         "johnpbloch/wordpress": "5.0.3",
         "wpackagist-plugin/wp-multibyte-patch": "2.8.2",
         "koodimonni-language/core-ja": "*",
-        "aromarious/wp-dotenv": "0.1.0"
+        "aromarious/wp-dotenv": "0.1.0",
+        "builder-name/original-plugin": "1.0.2",
+        "builder-name/original-theme": "dev-branchname"
     },
     "autoload": {
         "psr-0": {
