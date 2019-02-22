@@ -6,7 +6,7 @@
             "email": "me@builder-name.com"
         }
     ],
-    "description": "build file for builder-name wordpress site",
+    "description": "build file for sitename wordpress site",
     "repositories": [
         {
             "type": "composer",
