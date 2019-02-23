@@ -1,5 +1,6 @@
 {
   "name": "developer-name/original-plugin",
+  "description": "This plugin enables...", 
   "authors": [
     {
       "name": "developer-name",
