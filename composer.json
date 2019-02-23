@@ -9,14 +9,6 @@
     "description": "build file for sitename wordpress site",
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://github.com/developer-name/original-plugin"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/developer-name/original-theme"
-        },
-        {
             "type": "composer",
             "url": "https://wpackagist.org"
         },
@@ -26,12 +18,11 @@
         }
     ],
     "require": {
-        "johnpbloch/wordpress": "5.0.3",
-        "wpackagist-plugin/wp-multibyte-patch": "2.8.2",
+        "johnpbloch/wordpress": "^5.0.3",
+        "wpackagist-plugin/wp-multibyte-patch": "^2.8.2",
         "koodimonni-language/core-ja": "*",
-        "aromarious/wp-dotenv": "0.1.0",
-        "builder-name/original-plugin": "1.0.2",
-        "builder-name/original-theme": "dev-branchname"
+        "aromarious/wp-dotenv": "^0.1.1",
+        "aromarious/disable-update-notice": "^0.1.0"
     },
     "autoload": {
         "psr-0": {
@@ -42,6 +33,9 @@
         "installer-paths": {
             "wp/wp-content/plugins/{$name}/": [
                 "type:wordpress-plugin"
+            ],
+            "WP/wp-content/themes/{$name}/": [
+                "type:wordpress-theme"
             ]
         },
         "dropin-paths": {
@@ -58,13 +52,13 @@
         "wordpress-install-dir": "wp"
     },
     "scripts": {
-        "generate-config" : [
+        "generate-config": [
             "vendor/aromarious/wp-dotenv/generate-config.sh"
         ],
-        "generate-config-with-salts" : [
+        "generate-config-with-salts": [
             "vendor/aromarious/wp-dotenv/generate-config.sh salts"
         ],
-        "generate-index" : [
+        "generate-index": [
             "vendor/aromarious/wp-dotenv/generate-index.sh"
         ]
     }    

@@ -5,5 +5,3 @@ wp
 vendor
 .vscode
 .DS_Store
-composer.json
-composer.lock
