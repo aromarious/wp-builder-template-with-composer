@@ -52,6 +52,11 @@
         "wordpress-install-dir": "wp"
     },
     "scripts": {
+        "make-env": [
+            "echo Generating wp-config.php and index.php from .dot ....",
+            "@generate-config-with-salts",
+            "@generate-index"
+        ],
         "generate-config": [
             "vendor/aromarious/wp-dotenv/generate-config.sh"
         ],
@@ -61,5 +66,5 @@
         "generate-index": [
             "vendor/aromarious/wp-dotenv/generate-index.sh"
         ]
-    }    
+    }
 }
