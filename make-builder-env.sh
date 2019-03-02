@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ $1 = "--help" -o $# -ne 1 ]; then
+if [ "$1" = "--help" -o $# -ne 1 ]; then
     echo Usage: $0 
     echo After editing builder-settings.env, execute this command with no args.
     exit
