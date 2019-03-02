@@ -51,15 +51,7 @@
         "wordpress-install-dir": "%WP_CORE%"
     },
     "scripts": {
-        "post-install-cmd": [
-            "@copy-dotenv-sample",
-            "echo '***' Make .env file by copying sample dotenv file, and edit it '***'",
-            "echo '***' then Execute 'composer make-env'. '***'"
-        ],
-        "post-update-cmd": [
-            "@post-install-cmd"
-        ],
-        "copy-dotenv-sample": [
+        "copy-sample": [
             "vendor/aromarious/wp-dotenv/copy-dotenv-sample.sh"
         ],
         "make-env": [
