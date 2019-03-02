@@ -2,6 +2,7 @@
 template*
 sample*
 make-builder-env.sh
+builder-settings.env
 .env*
 .htaccess
 index.php
