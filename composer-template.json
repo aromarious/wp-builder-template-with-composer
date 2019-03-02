@@ -31,25 +31,25 @@
     },
     "extra": {
         "installer-paths": {
-            "wp/wp-content/plugins/{$name}/": [
+            "%WP_CORE%/wp-content/plugins/{$name}/": [
                 "type:wordpress-plugin"
             ],
-            "WP/wp-content/themes/{$name}/": [
+            "%WP_CORE%/wp-content/themes/{$name}/": [
                 "type:wordpress-theme"
             ]
         },
         "dropin-paths": {
-            "wp/wp-content/languages/": [
+            "%WP_CORE%/wp-content/languages/": [
                 "vendor:koodimonni-language"
             ],
-            "wp/wp-content/languages/plugins/": [
+            "%WP_CORE%/wp-content/languages/plugins/": [
                 "vendor:koodimonni-plugin-language"
             ],
-            "wp/wp-content/languages/themes/": [
+            "%WP_CORE%/wp-content/languages/themes/": [
                 "vendor:koodimonni-theme-language"
             ]
         },
-        "wordpress-install-dir": "wp"
+        "wordpress-install-dir": "%WP_CORE%"
     },
     "scripts": {
         "make-env": [
