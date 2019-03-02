@@ -3,7 +3,7 @@
     "authors": [
         {
             "name": "%BUILDER_NAME%",
-            "email": "me@%BUILDER_NAME%.com"
+            "email": "%BUILDER_EMAIL%"
         }
     ],
     "description": "build file for %SITENAME% wordpress site",
@@ -31,21 +31,21 @@
     },
     "extra": {
         "installer-paths": {
-            "%WP_CORE%/wp-content/plugins/{$name}/": [
+            "%WP_CORE%wp-content/plugins/{$name}/": [
                 "type:wordpress-plugin"
             ],
-            "%WP_CORE%/wp-content/themes/{$name}/": [
+            "%WP_CORE%wp-content/themes/{$name}/": [
                 "type:wordpress-theme"
             ]
         },
         "dropin-paths": {
-            "%WP_CORE%/wp-content/languages/": [
+            "%WP_CORE%wp-content/languages/": [
                 "vendor:koodimonni-language"
             ],
-            "%WP_CORE%/wp-content/languages/plugins/": [
+            "%WP_CORE%wp-content/languages/plugins/": [
                 "vendor:koodimonni-plugin-language"
             ],
-            "%WP_CORE%/wp-content/languages/themes/": [
+            "%WP_CORE%wp-content/languages/themes/": [
                 "vendor:koodimonni-theme-language"
             ]
         },
