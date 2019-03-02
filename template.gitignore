@@ -1,5 +1,6 @@
 %WP_CORE%
 template*
+sample*
 make-builder-env.sh
 .env*
 .htaccess
