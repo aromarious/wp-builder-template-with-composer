@@ -1,7 +1,9 @@
+%WP_CORE%
 .env*
 .htaccess
 index.php
-wp
 vendor
 .vscode
 .DS_Store
+make-builder-env.sh
+template*
