@@ -1,12 +1,12 @@
 {
-    "name": "builder-name/wp-builder-sitename",
+    "name": "%BUILDER_NAME%/wp-builder-%SITENAME%",
     "authors": [
         {
-            "name": "builder-name",
-            "email": "me@builder-name.com"
+            "name": "%BUILDER_NAME%",
+            "email": "me@%BUILDER_NAME%.com"
         }
     ],
-    "description": "build file for sitename wordpress site",
+    "description": "build file for %SITENAME% wordpress site",
     "repositories": [
         {
             "type": "composer",

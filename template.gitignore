@@ -1,0 +1,9 @@
+%WP_CORE%
+template*
+make-builder-env.sh
+.env*
+.htaccess
+index.php
+vendor
+.vscode
+.DS_Store
