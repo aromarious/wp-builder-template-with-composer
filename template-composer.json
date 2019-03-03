@@ -1,5 +1,5 @@
 {
-    "name": "%BUILDER_NAME%/wp-builder-%SITENAME%",
+    "name": "%BUILDER_NAME%/%SITENAME%-wp-builder",
     "authors": [
         {
             "name": "%BUILDER_NAME%",
@@ -69,4 +69,4 @@
             "vendor/aromarious/wp-dotenv/generate-index.sh"
         ]
     }
-}
+}   
