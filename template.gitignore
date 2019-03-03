@@ -1,4 +1,3 @@
-%WP_CORE%
 template*
 sample*
 make-builder-env.sh
@@ -9,3 +8,4 @@ index.php
 vendor
 .vscode
 .DS_Store
+*~

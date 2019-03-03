@@ -11,7 +11,7 @@ cat template-composer.json \
 | sed "s!%BUILDER_NAME%!${BUILDER_NAME}!" \
 | sed "s!%BUILDER_EMAIL%!${BUILDER_EMAIL}!" \
 | sed "s!%SITENAME%!${SITENAME}!" \
-> composer.json
+> ${DOCROOT}composer.json
 
 cat template.gitignore \
 | sed "s!%WP_CORE%!${WP_CORE}!" \
