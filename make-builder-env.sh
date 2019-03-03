@@ -14,8 +14,4 @@ cat template-composer.json \
 | sed "s!%SITENAME%!${SITENAME}!" \
 > composer.json
 
-cat template.gitignore \
-| sed "s!%WP_CORE%!${WP_CORE}!" \
-> .gitignore
-
 echo "COMPLETE: composer.json and .gitignore generated."

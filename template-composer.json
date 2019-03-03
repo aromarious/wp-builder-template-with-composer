@@ -7,16 +7,16 @@
         }
     ],
     "description": "build file for %SITENAME% wordpress site",
-    "repositories": [
-        {
+    "repositories": {
+        "wpackagist": {
             "type": "composer",
             "url": "https://wpackagist.org"
         },
-        {
+        "wp-languages": {
             "type": "composer",
             "url": "https://wp-languages.github.io"
         }
-    ],
+    },
     "require": {
         "johnpbloch/wordpress": "^5.0.3",
         "wpackagist-plugin/wp-multibyte-patch": "^2.8.2",
@@ -69,4 +69,4 @@
             "vendor/aromarious/wp-dotenv/generate-index.sh"
         ]
     }
-}   
+}
