@@ -30,25 +30,25 @@
     },
     "extra": {
         "installer-paths": {
-            "%WP_CORE%wp-content/plugins/{$name}/": [
+            "%DOCROOT%%WP_CORE%wp-content/plugins/{$name}/": [
                 "type:wordpress-plugin"
             ],
-            "%WP_CORE%wp-content/themes/{$name}/": [
+            "%DOCROOT%%WP_CORE%wp-content/themes/{$name}/": [
                 "type:wordpress-theme"
             ]
         },
         "dropin-paths": {
-            "%WP_CORE%wp-content/languages/": [
+            "%DOCROOT%%WP_CORE%wp-content/languages/": [
                 "vendor:koodimonni-language"
             ],
-            "%WP_CORE%wp-content/languages/plugins/": [
+            "%DOCROOT%%WP_CORE%wp-content/languages/plugins/": [
                 "vendor:koodimonni-plugin-language"
             ],
-            "%WP_CORE%wp-content/languages/themes/": [
+            "%DOCROOT%%WP_CORE%wp-content/languages/themes/": [
                 "vendor:koodimonni-theme-language"
             ]
         },
-        "wordpress-install-dir": "%WP_CORE%"
+        "wordpress-install-dir": "%DOCROOT%%WP_CORE%"
     },
     "scripts": {
         "copy-sample": [
