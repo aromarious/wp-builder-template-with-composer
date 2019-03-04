@@ -53,7 +53,7 @@
     "scripts": {
         "copy-sample": [
             "vendor/aromarious/wp-dotenv/copy-dotenv-sample.sh",
-            "echo Here are sample .env files. Copy one to make .env and edit it!",
+            "echo Here are sample .env files. Copy one to make .env and edit it!"
         ],
         "make-env": [
             "echo Generating wp-config.php and index.php from .env ....",
