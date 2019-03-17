@@ -31,15 +31,15 @@
     "extra": {
         "wordpress-install-dir": "%DOCROOT%%WP_CORE%",
         "installer-paths": {
-            "%DOCROOT%%WP_CONTENT%/plugins/{$name}/"   : ["type:wordpress-plugin"],
-            "%DOCROOT%%WP_CONTENT%/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-            "%DOCROOT%%WP_CONTENT%/themes/{$name}/"    : ["type:wordpress-theme"]
+            "%DOCROOT%%WP_CONTENT%plugins/{$name}"   : ["type:wordpress-plugin"],
+            "%DOCROOT%%WP_CONTENT%mu-plugins/{$name}": ["type:wordpress-muplugin"],
+            "%DOCROOT%%WP_CONTENT%themes/{$name}"    : ["type:wordpress-theme"]
         },
         "dropin-paths": {
-            "%DOCROOT%%WP_CONTENT%/languages/"           : ["vendor:koodimonni-language"],
-            "%DOCROOT%%WP_CONTENT%/languages/plugins/"   : ["vendor:koodimonni-plugin-language"],
-            "%DOCROOT%%WP_CONTENT%/languages/mu-plugins/": ["vendor:koodimonni-muplugin-language"],
-            "%DOCROOT%%WP_CONTENT%/languages/themes/"    : ["vendor:koodimonni-theme-language"]
+            "%DOCROOT%%WP_CONTENT%languages/"           : ["vendor:koodimonni-language"],
+            "%DOCROOT%%WP_CONTENT%languages/plugins/"   : ["vendor:koodimonni-plugin-language"],
+            "%DOCROOT%%WP_CONTENT%languages/mu-plugins/": ["vendor:koodimonni-muplugin-language"],
+            "%DOCROOT%%WP_CONTENT%languages/themes/"    : ["vendor:koodimonni-theme-language"]
         }
     },
     "scripts": {
