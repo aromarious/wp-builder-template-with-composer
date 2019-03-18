@@ -1,0 +1,61 @@
+global:
+  sql_adapter: wpcli
+
+local:
+  vhost: https://SITENAME.local
+  wordpress_path: /app/public/wp # use an absolute path here
+
+  database:
+    name: local
+    user: root
+    password: "root" # could be blank, so always use quotes around
+    host: 127.0.0.1
+
+production:
+  vhost: https://SITENAME.com
+  wordpress_path: /home/BUILDERNAME/SITENAME.com/public_html/wp # use an absolute path here
+
+  database:
+    name: 
+    user: 
+    password: 
+    host: 
+    port: 
+
+  exclude:
+    - '.git/'
+    - '.gitignore'
+    - '.gitmodules'
+    - '.env'
+    - 'node_modules/'
+    - 'bin/'
+    - 'tmp/*'
+    - 'Gemfile*'
+    - 'Movefile'
+    - 'movefile'
+    - 'movefile.yml'
+    - 'movefile.yaml'
+    - 'wp-config.php'
+    - 'wp-content/*.sql.gz'
+    - '*.orig'
+
+  ssh:
+    host: 
+
+  forbid:
+    push:
+      db: false
+      plugins: true
+      themes: true
+      languages: true
+      uploads: false
+      mu-plugins: true
+    pull:
+      db: true
+      plugins: true
+      themes: true
+      languages: true
+      uploads: true
+      mu-plugins: true
+
+
