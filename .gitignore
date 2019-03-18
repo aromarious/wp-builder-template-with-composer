@@ -6,4 +6,5 @@ vendor
 .vscode
 .DS_Store
 make-builder-env.sh
+movefile.yml
 template*
